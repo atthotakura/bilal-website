@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilal Family & Multicuisine Restaurant — Ongole</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>try{if(localStorage.getItem('bilal_theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+  <style>
+    :root {
+      --bg:            #F5EDD0;
+      --bg-2:          #FDF6E3;
+      --bg-card:       #FFFAF4;
+      --bg-card-2:     #F8F0DC;
+      --gold:          #C4975A;
+      --gold-mid:      #BFA06B;
+      --gold-bright:   #9A6E28;
+      --gold-pale:     #FDF6E3;
+      --gold-glow:     rgba(196,151,90,.3);
+      --brand-blue:    #1C2E8A;
+      --text:          #3D1800;
+      --text-soft:     #6B3C1A;
+      --text-muted:    #8B5E3C;
+      --text-dim:      #BFA06B;
+      --border:        rgba(61,24,0,.18);
+      --border-faint:  rgba(61,24,0,.1);
+      --border-strong: rgba(61,24,0,.35);
+      --shadow-sm:     0 2px 16px rgba(61,24,0,.1);
+      --shadow-md:     0 8px 32px rgba(61,24,0,.15);
+      --shadow-lg:     0 20px 60px rgba(61,24,0,.22);
+      --glow-sm:       0 0 20px rgba(196,151,90,.25);
+      --glow-md:       0 0 36px rgba(196,151,90,.38);
+    }
+
+    /* ── DARK MODE ── */
+    html.dark-mode {
+      --bg:            #0C0E1A;
+      --bg-2:          #10121F;
+      --bg-card:       #161929;
+      --bg-card-2:     #1A1E32;
+      --gold:          #C4975A;
+      --gold-mid:      #CAA452;
+      --gold-bright:   #DCBA6E;
+      --gold-pale:     rgba(220,186,110,.07);
+      --gold-glow:     rgba(196,151,90,.5);
+      --brand-blue:    #1C2E8A;
+      --text:          #F0E8D0;
+      --text-soft:     #D4C4A0;
+      --text-muted:    #BFA06B;
+      --text-dim:      #7A6545;
+      --border:        rgba(196,151,90,.15);
+      --border-faint:  rgba(196,151,90,.08);
+      --border-strong: rgba(196,151,90,.32);
+      --shadow-sm:     0 2px 16px rgba(0,0,0,.45);
+      --shadow-md:     0 8px 32px rgba(0,0,0,.55);
+      --shadow-lg:     0 20px 60px rgba(0,0,0,.65);
+      --glow-sm:       0 0 20px rgba(196,151,90,.38);
+      --glow-md:       0 0 36px rgba(196,151,90,.58);
+    }
+
+    html.dark-mode .site-header {
+      background: rgba(12,14,26,.96);
+    }
+
+    html.dark-mode .hero { background: var(--bg); }
+
+    html.dark-mode .hero-orb-1 {
+      background: radial-gradient(circle, rgba(196,151,90,.4) 0%, transparent 70%);
+    }
+    html.dark-mode .hero-orb-2 {
+      background: radial-gradient(circle, rgba(28,46,138,.6) 0%, transparent 70%);
+    }
+    html.dark-mode .hero-orb-3 {
+      background: radial-gradient(circle, rgba(196,151,90,.22) 0%, transparent 70%);
+    }
+
+    html.dark-mode .hero-em {
+      background: linear-gradient(135deg, #7BA3FF 0%, #DCBA6E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    html.dark-mode .glass-card {
+      background: rgba(22,25,41,.9);
+      border-color: rgba(196,151,90,.12);
+    }
+    html.dark-mode .glass-card:hover {
+      border-color: rgba(196,151,90,.32);
+    }
+
+    html.dark-mode .trust-strip { background: var(--bg-2); }
+
+    html.dark-mode .btn-wa {
+      background: rgba(37,211,102,.16);
+      color: #6ee7a0;
+      border-color: rgba(37,211,102,.5);
+    }
+    html.dark-mode .btn-wa:hover {
+      background: rgba(37,211,102,.26);
+      box-shadow: 0 8px 28px rgba(37,211,102,.25);
+    }
+
+    html.dark-mode .wa-action-card {
+      background: rgba(15,38,24,.95);
+      border-color: rgba(37,211,102,.45);
+      box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 0 28px rgba(37,211,102,.1);
+    }
+    html.dark-mode .wa-action-card:hover {
+      border-color: rgba(37,211,102,.65);
+      box-shadow: 0 12px 40px rgba(0,0,0,.5), 0 0 36px rgba(37,211,102,.16);
+    }
+    html.dark-mode .wa-action-card h3 { color: #6ee7a0; }
+    html.dark-mode .wa-action-card p  { color: rgba(167,243,208,.75); }
+
+    html.dark-mode .btn-wa-light {
+      background: rgba(37,211,102,.14);
+      color: #6ee7a0;
+      border-color: rgba(37,211,102,.42);
+    }
+    html.dark-mode .btn-wa-light:hover {
+      background: rgba(37,211,102,.22);
+      border-color: rgba(37,211,102,.6);
+    }
+
+    html.dark-mode .floating-wa {
+      background: rgba(15,38,24,.97);
+      color: #6ee7a0;
+      border-color: rgba(37,211,102,.5);
+      box-shadow: 0 6px 24px rgba(0,0,0,.4), 0 0 20px rgba(37,211,102,.18);
+    }
+    html.dark-mode .floating-wa:hover {
+      border-color: rgba(37,211,102,.7);
+      box-shadow: 0 10px 32px rgba(0,0,0,.45), 0 0 30px rgba(37,211,102,.28);
+    }
+
+    html.dark-mode .carousel-btn {
+      background: #1C2E8A;
+      color: #DCBA6E;
+      border-color: rgba(196,151,90,.18);
+      box-shadow: 0 4px 18px rgba(0,0,0,.5);
+    }
+    html.dark-mode .carousel-btn:hover {
+      background: var(--gold);
+      color: #0C0E1A;
+    }
+
+    html.dark-mode .rating-banner {
+      background: rgba(196,151,90,.07);
+      border-color: rgba(196,151,90,.42);
+      box-shadow: inset 0 0 0 1px rgba(196,151,90,.1), 0 4px 20px rgba(0,0,0,.3);
+    }
+
+    html.dark-mode .info-icon {
+      background: rgba(196,151,90,.08);
+      border-color: rgba(196,151,90,.15);
+    }
+
+    html.dark-mode footer {
+      background: var(--bg-2);
+    }
+    html.dark-mode .footer-brand { color: #DCBA6E; }
+
+    html.dark-mode .lang-btn.active {
+      background: var(--gold);
+      color: #0C0E1A;
+    }
+
+    .theme-btn {
+      background: rgba(196,151,90,.07);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .95rem;
+      transition: background .18s, border-color .18s;
+      flex-shrink: 0;
+    }
+    .theme-btn:hover {
+      background: rgba(196,151,90,.16);
+      border-color: var(--border-strong);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color .35s, color .25s;
+    }
+
+    *:focus-visible { outline: 2px solid var(--gold-mid); outline-offset: 3px; border-radius: 4px; }
+
+    html[lang="te"] h1,
+    html[lang="te"] h2,
+    html[lang="te"] h3,
+    html[lang="te"] h4,
+    html[lang="te"] .brand-name,
+    html[lang="te"] .footer-brand { font-family: system-ui, sans-serif; }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+    }
+    .reveal.revealed { opacity: 1; transform: none; }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245,237,208,.96);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border-faint);
+      transition: background .35s, border-color .25s;
+    }
+
+    .header-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: .9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .header-right { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+    .header-controls { display: flex; align-items: center; gap: .45rem; }
+
+    .brand { display: flex; align-items: center; gap: .9rem; text-decoration: none; }
+
+    .logo-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 13px;
+      background: linear-gradient(145deg, #3E1C0A 0%, #211008 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 18px rgba(0,0,0,.5), 0 0 0 1px rgba(196,151,90,.22);
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      font-size: .68rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: .15rem; flex-wrap: wrap; }
+
+    nav a {
+      color: var(--text-soft);
+      text-decoration: none;
+      font-size: .84rem;
+      font-weight: 500;
+      padding: .4rem .85rem;
+      border-radius: 999px;
+      transition: color .18s, background .18s;
+      position: relative;
+    }
+
+    nav a:hover { color: var(--text); background: rgba(196,151,90,.08); }
+
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: .2rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: .22rem .3rem;
+      background: rgba(196,151,90,.05);
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: .26rem .58rem;
+      border-radius: 999px;
+      font-family: 'Inter', system-ui, sans-serif;
+      transition: background .15s, color .15s;
+      line-height: 1.4;
+    }
+
+    .lang-btn.active { background: var(--gold); color: var(--bg); }
+    .lang-btn:hover:not(.active) { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      padding: 6rem 1.5rem 5.5rem;
+      text-align: center;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(110px);
+      pointer-events: none;
+    }
+
+    .hero-orb-1 {
+      width: 560px;
+      height: 560px;
+      background: radial-gradient(circle, rgba(196,151,90,.24) 0%, transparent 70%);
+      top: -160px;
+      right: -120px;
+      animation: orb-drift-1 11s ease-in-out infinite alternate;
+    }
+
+    .hero-orb-2 {
+      width: 440px;
+      height: 440px;
+      background: radial-gradient(circle, rgba(28,46,138,.12) 0%, transparent 70%);
+      bottom: -80px;
+      left: -80px;
+      animation: orb-drift-2 14s ease-in-out infinite alternate;
+    }
+
+    .hero-orb-3 {
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(196,151,90,.12) 0%, transparent 70%);
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: orb-drift-3 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes orb-drift-1 {
+      0%   { transform: translate(0,0) scale(1); }
+      100% { transform: translate(40px,-30px) scale(1.08); }
+    }
+    @keyframes orb-drift-2 {
+      0%   { transform: translate(0,0) scale(1.05); }
+      100% { transform: translate(-30px,25px) scale(1); }
+    }
+    @keyframes orb-drift-3 {
+      0%   { transform: translateX(-50%) scale(1); opacity: .6; }
+      100% { transform: translateX(-50%) scale(1.15); opacity: .3; }
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: rgba(196,151,90,.1);
+      border: 1px solid rgba(196,151,90,.28);
+      color: var(--gold-mid);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      padding: .42rem 1.1rem;
+      border-radius: 999px;
+      margin-bottom: 1.6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-kicker::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.07) 50%, transparent 65%);
+      animation: shimmer 4s ease-in-out infinite 1.5s;
+    }
+
+    @keyframes shimmer {
+      0%   { transform: translateX(-120%); }
+      100% { transform: translateX(220%); }
+    }
+
+    .kicker-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold-mid);
+      flex-shrink: 0;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: .85rem;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--text);
+    }
+
+    .hero-em {
+      background: linear-gradient(135deg, #3A5FD9 0%, #C4975A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-tagline {
+      color: var(--text-soft);
+      font-size: clamp(.92rem, 1.8vw, 1.08rem);
+      font-weight: 400;
+      max-width: 540px;
+      margin: 0 auto 2.6rem;
+      line-height: 1.8;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-bottom-rule {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold) 30%, var(--gold) 70%, transparent 100%);
+      opacity: .2;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .92rem;
+      padding: .85rem 1.75rem;
+      border-radius: 999px;
+      transition: transform .2s, box-shadow .2s;
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 100%);
+      color: var(--bg);
+      box-shadow: 0 6px 24px rgba(196,151,90,.35);
+    }
+
+    .btn-primary:hover { box-shadow: 0 10px 36px rgba(196,151,90,.55), 0 0 0 1px rgba(196,151,90,.3); }
+
+    .btn-wa {
+      background: rgba(37,211,102,.18);
+      color: #15803d;
+      border: 1px solid rgba(37,211,102,.45);
+      box-shadow: 0 4px 20px rgba(37,211,102,.15);
+    }
+
+    .btn-wa:hover {
+      background: rgba(37,211,102,.28);
+      box-shadow: 0 8px 28px rgba(37,211,102,.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+    }
+
+    .btn-outline:hover { border-color: var(--border-strong); color: var(--text); background: rgba(196,151,90,.06); }
+
+    /* ── TRUST STRIP ── */
+    .trust-strip {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border-faint);
+      border-bottom: 1px solid var(--border-faint);
+    }
+
+    .trust-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--text-muted);
+      font-size: .83rem;
+    }
+
+    .trust-val { font-weight: 700; color: var(--gold-bright); font-size: .95em; }
+
+    /* ── SECTION SHARED ── */
+    section { padding: 5rem 1.5rem; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      color: var(--gold-mid);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin-bottom: .55rem;
+    }
+
+    .section-label::before,
+    .section-label::after {
+      content: '';
+      display: inline-block;
+      width: 26px;
+      height: 1px;
+      background: var(--gold-mid);
+      opacity: .5;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.16;
+      margin-bottom: .85rem;
+      background: linear-gradient(135deg, var(--text) 40%, var(--text-soft) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 580px;
+      font-size: .96rem;
+      line-height: 1.82;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      margin: .5rem 0 1.9rem;
+      width: fit-content;
+    }
+
+    .ornament-line {
+      width: 44px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+    }
+
+    .ornament-line-r { background: linear-gradient(90deg, transparent, var(--gold)); }
+
+    .ornament-gem {
+      color: var(--gold);
+      font-size: .55rem;
+      opacity: .75;
+    }
+
+    /* ── GLASS CARD ── */
+    .glass-card {
+      background: rgba(255,252,242,.88);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: border-color .25s, box-shadow .25s, transform .25s;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(196,151,90,.28);
+      box-shadow: var(--shadow-md), var(--glow-sm);
+      transform: translateY(-3px);
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--bg); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .about-card {
+      padding: 1.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 1.9rem;
+      right: 1.9rem;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-mid), transparent);
+      border-radius: 1px;
+    }
+
+    .about-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: .85rem;
+    }
+
+    .about-card p {
+      color: var(--text-muted);
+      font-size: .94rem;
+      line-height: 1.82;
+    }
+
+    .about-card ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+
+    .about-card li {
+      color: var(--text-muted);
+      font-size: .93rem;
+      line-height: 1.72;
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+    }
+
+    .about-card li::before {
+      content: '◆';
+      color: var(--gold);
+      font-size: .45rem;
+      flex-shrink: 0;
+      margin-top: .52rem;
+    }
+
+    .pill-row { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+
+    .pill {
+      display: inline-block;
+      background: rgba(196,151,90,.08);
+      border: 1px solid rgba(196,151,90,.22);
+      color: var(--gold-mid);
+      padding: .3rem .78rem;
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 500;
+    }
+
+    /* ── MENU ── */
+    #menu { background: var(--bg-2); }
+
+    .carousel-wrapper {
+      position: relative;
+      margin-top: 1.9rem;
+      padding: 0 3.4rem;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 1.1rem;
+      overflow: hidden;
+      padding: .75rem .25rem 1.5rem;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid rgba(61,24,0,.2);
+      background: #3D1800;
+      color: #F5EDD0;
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .18s, color .18s, box-shadow .18s, transform .18s;
+      box-shadow: 0 4px 18px rgba(61,24,0,.28);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .carousel-btn:hover {
+      background: var(--gold);
+      color: #3D1800;
+      box-shadow: 0 8px 28px rgba(61,24,0,.32);
+      transform: translateY(calc(-50% - 2px));
+    }
+    .carousel-prev { left: 0; }
+    .carousel-next { right: 0; }
+
+    .menu-cat-card { padding: 1.3rem 1.5rem 1.5rem; flex: 0 0 270px; }
+
+    .menu-cat-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: .96rem;
+      color: var(--gold-mid);
+      margin-bottom: .9rem;
+      padding-bottom: .65rem;
+      border-bottom: 1px solid var(--border-faint);
+      display: flex;
+      align-items: center;
+      gap: .45rem;
+    }
+
+    .menu-item {
+      padding: .4rem 0;
+      font-size: .87rem;
+      color: var(--text-soft);
+      border-bottom: 1px solid rgba(196,151,90,.06);
+      line-height: 1.48;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      transition: color .15s, padding-left .15s;
+      border-radius: 4px;
+    }
+
+    .menu-item:last-child { border-bottom: none; }
+    .menu-item:hover { color: var(--text); padding-left: .35rem; }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .dot-veg {
+      border: 1.5px solid #4CAF50;
+      background: radial-gradient(circle at 50% 50%, #4CAF50 45%, transparent 45%);
+    }
+
+    .dot-nonveg {
+      border: 1.5px solid #EF5350;
+      background: radial-gradient(circle at 50% 50%, #EF5350 45%, transparent 45%);
+    }
+
+    /* ── REVIEWS ── */
+    #reviews { background: var(--bg); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.4rem;
+    }
+
+    .review-card {
+      padding: 1.8rem;
+      position: relative;
+    }
+
+    .review-card::before {
+      content: '\201C';
+      position: absolute;
+      top: -.3rem;
+      left: 1.3rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5rem;
+      line-height: 1;
+      color: var(--gold);
+      opacity: .18;
+      pointer-events: none;
+    }
+
+    .review-stars {
+      color: var(--gold-bright);
+      font-size: .95rem;
+      margin-bottom: .65rem;
+      letter-spacing: .08em;
+    }
+
+    .review-card blockquote {
+      font-size: .93rem;
+      color: var(--text-soft);
+      line-height: 1.82;
+      font-style: italic;
+      margin-bottom: .95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .review-sig {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--gold-mid);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .rating-banner {
+      margin-top: 2rem;
+      background: rgba(196,151,90,.06);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.1rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .85rem;
+      flex-wrap: wrap;
+    }
+
+    .rating-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold-bright);
+    }
+
+    .rating-banner p { color: var(--text-muted); font-size: .9rem; }
+
+    /* ── VISIT ── */
+    #visit { background: var(--bg-2); }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .visit-card { padding: 1.9rem; }
+
+    .visit-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+
+    .info-row {
+      display: flex;
+      gap: .85rem;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .info-icon {
+      font-size: .95rem;
+      flex-shrink: 0;
+      margin-top: .15rem;
+      width: 28px;
+      height: 28px;
+      background: rgba(196,151,90,.1);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-text { font-size: .91rem; color: var(--text-muted); line-height: 1.64; }
+    .info-text strong { color: var(--text-soft); font-weight: 600; display: block; margin-bottom: .15rem; }
+    .info-text a { color: var(--gold-mid); text-decoration: none; }
+    .info-text a:hover { color: var(--gold-bright); }
+
+    .wa-action-card {
+      background: rgba(240,253,244,.9);
+      border: 1px solid rgba(37,211,102,.35);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 1.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      box-shadow: 0 8px 32px rgba(61,24,0,.1), 0 0 0 1px rgba(37,211,102,.1);
+      transition: border-color .25s, box-shadow .25s;
+    }
+
+    .wa-action-card:hover {
+      border-color: rgba(37,211,102,.55);
+      box-shadow: 0 12px 40px rgba(61,24,0,.15), 0 0 24px rgba(37,211,102,.15);
+    }
+
+    .wa-action-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: #166534;
+    }
+
+    .wa-action-card p { color: rgba(22,101,52,.75); font-size: .91rem; line-height: 1.7; }
+
+    .wa-options { display: flex; flex-direction: column; gap: .6rem; }
+
+    .btn-wa-light {
+      background: rgba(37,211,102,.15);
+      color: #15803d;
+      border: 1px solid rgba(37,211,102,.38);
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .87rem;
+      padding: .72rem 1.25rem;
+      border-radius: 999px;
+      transition: background .18s, border-color .18s;
+    }
+
+    .btn-wa-light:hover { background: rgba(37,211,102,.18); border-color: rgba(37,211,102,.38); }
+
+    /* ── FLOATING WA ── */
+    .floating-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      background: rgba(240,253,244,.96);
+      color: #15803d;
+      text-decoration: none;
+      padding: .78rem 1.3rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .87rem;
+      border: 1px solid rgba(37,211,102,.45);
+      box-shadow: 0 6px 24px rgba(61,24,0,.15), 0 0 16px rgba(37,211,102,.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+
+    .floating-wa:hover {
+      transform: translateY(-3px);
+      border-color: rgba(37,211,102,.65);
+      box-shadow: 0 10px 32px rgba(61,24,0,.2), 0 0 24px rgba(37,211,102,.25);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #F0EBE0;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .footer-inner { max-width: 1160px; margin: 0 auto; }
+
+    .footer-gem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .8rem;
+      margin-bottom: 1rem;
+      opacity: .6;
+    }
+
+    .footer-gem-line { width: 64px; height: 1px; background: var(--gold-mid); }
+    .footer-gem-icon { color: var(--gold-mid); font-size: .5rem; }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--text);
+      margin-bottom: .4rem;
+    }
+
+    .footer-address { font-size: .83rem; color: var(--text-soft); }
+
+    .footer-dev {
+      margin-top: 1rem;
+      font-size: .73rem;
+      color: var(--text-muted);
+      opacity: .8;
+    }
+
+    .footer-dev a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+    .footer-dev a:hover { opacity: 1; color: var(--gold-mid); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 780px) {
+      .header-inner { flex-direction: column; align-items: flex-start; gap: .65rem; }
+      .header-right { width: 100%; justify-content: space-between; }
+      .header-controls { margin-left: auto; }
+      .about-grid, .visit-grid { grid-template-columns: 1fr; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .trust-inner { gap: 1.3rem; }
+      section { padding: 3.5rem 1rem; }
+      .hero { padding: 4.5rem 1rem 4rem; }
+      .hero-orb-1 { width: 340px; height: 340px; }
+      .hero-orb-2 { width: 280px; height: 280px; }
+      .hero-orb-3 { width: 200px; height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#">
+        <div class="logo-mark">
+          <svg viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg" width="34" height="32" aria-label="Bilal Restaurant logo mark">
+            <path d="M12 17 Q10.5 12.5 12 9 Q13.5 5.5 12 3" stroke="#C4975A" stroke-width="1.55" stroke-linecap="round" fill="none"/>
+            <path d="M19 15.5 Q17.5 11 19 7.5 Q20.5 4 19 1.8" stroke="#C4975A" stroke-width="1.55" stroke-linecap="round" fill="none"/>
+            <path d="M26 17 Q24.5 12.5 26 9 Q27.5 5.5 26 3" stroke="#C4975A" stroke-width="1.55" stroke-linecap="round" fill="none"/>
+            <path d="M2 34 Q2 20 12 16.5 Q22 13 36 27" stroke="#C4975A" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name" data-i18n="brand_name">Bilal Family &amp; Multicuisine</div>
+          <div class="brand-sub" data-i18n="brand_sub">Ongole · Ramnagar</div>
+        </div>
+      </a>
+      <div class="header-right">
+        <nav>
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#menu" data-i18n="nav_menu">Menu</a>
+          <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+          <a href="#visit" data-i18n="nav_visit">Visit Us</a>
+        </nav>
+        <div class="header-controls">
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+            <button class="lang-btn" data-lang="te" onclick="setLang('te')">తె</button>
+          </div>
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode" onclick="toggleTheme()"><span class="theme-icon">🌙</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-content">
+      <span class="hero-kicker">
+        <span class="kicker-dot"></span>
+        <span data-i18n="hero_kicker">Ongole's Favourite Multicuisine Restaurant</span>
+        <span class="kicker-dot"></span>
+      </span>
+      <h1 data-i18n-html="hero_h1">Where Every Meal Becomes<br>a <span class="hero-em">Memory</span></h1>
+      <p class="hero-tagline" data-i18n="hero_tagline">Slow-cooked dum biryanis, Arabian platters, sizzling tandoor, authentic Chinese — all crafted fresh for families and food lovers in Ongole.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#menu" data-i18n="hero_cta_menu">Explore Our Menu</a>
+        <a class="btn btn-wa" href="https://wa.me/917947418309?text=Hi%20Bilal%20Restaurant%2C%20I%20would%20like%20to%20reserve%20a%20table" target="_blank" rel="noreferrer">
+          📲 <span data-i18n="hero_cta_wa">Reserve via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-bottom-rule"></div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <div class="trust-item">⭐ <span class="trust-val">4.6</span>&nbsp;<span data-i18n="trust_google">Google Rating</span></div>
+      <div class="trust-item">💬 <span class="trust-val">1,200+</span>&nbsp;<span data-i18n="trust_reviews">Reviews</span></div>
+      <div class="trust-item">🕙 <span class="trust-val">10 AM – 11 PM</span>&nbsp;<span data-i18n="trust_daily">Daily</span></div>
+      <div class="trust-item">👨‍👩‍👧&nbsp;<span data-i18n="trust_family">Family-Friendly Dining</span></div>
+      <div class="trust-item">🚗&nbsp;<span data-i18n="trust_parking">Free Parking Nearby</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label" data-i18n="about_label">Our Story</p>
+        <h2 class="section-title" data-i18n="about_title">A Taste of Heritage, Every Day</h2>
+        <div class="ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem">◆</span>
+          <span class="ornament-line ornament-line-r"></span>
+        </div>
+        <p class="section-desc" data-i18n="about_desc">Bilal brings together the richness of Hyderabadi Mughlai cooking, coastal Andhra seafood, aromatic Arabian platters and authentic Chinese dishes — served with warmth and speed that keeps families coming back.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal" style="transition-delay:.1s">
+          <h3 data-i18n="about_card1_title">What We Serve</h3>
+          <p data-i18n="about_card1_desc">From slow-cooked dum biryanis to sizzling tandoor starters, authentic Chinese soups, and fresh seafood — our menu has something for every palate and every occasion.</p>
+          <div class="pill-row">
+            <span class="pill">Biryanis &amp; Mandi</span>
+            <span class="pill">Tandoor &amp; BBQ</span>
+            <span class="pill">Chinese Starters</span>
+            <span class="pill">Seafood</span>
+            <span class="pill">Family Packs</span>
+            <span class="pill">Platters</span>
+            <span class="pill">Desserts</span>
+          </div>
+        </div>
+        <div class="about-card glass-card reveal" style="transition-delay:.2s">
+          <h3 data-i18n="about_card2_title">Why Guests Love Us</h3>
+          <ul>
+            <li data-i18n="about_li1">Handmade spice blends and slow-cooked dum biryanis — a Bilal hallmark</li>
+            <li data-i18n="about_li2">Fast, friendly service for quick lunches and relaxed family dinners</li>
+            <li data-i18n="about_li3">Generous portions and curated platters perfect for groups</li>
+            <li data-i18n="about_li4">Clean, contemporary ambience suited for families and kids</li>
+            <li data-i18n="about_li5">Authentic Chinese soups and starters — a must-try among regulars</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label" data-i18n="menu_label">What We Serve</p>
+        <h2 class="section-title" data-i18n="menu_title">Our Menu</h2>
+        <div class="ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem">◆</span>
+          <span class="ornament-line ornament-line-r"></span>
+        </div>
+        <p class="section-desc" data-i18n="menu_desc">Our complete menu — everything we serve, all in one place.</p>
+      </div>
+
+      <div class="carousel-wrapper reveal" style="transition-delay:.1s">
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track" id="menuCarousel">
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_veg_starters">🥗 Vegetarian Starters</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>French Fries</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Crispy Veg</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Gobi 65</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Babycorn Salt &amp; Pepper</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Manchurian Vegetables</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Corn Tikki</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Majestic</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Crispy Paneer</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cheese Balls</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Dragon Paneer</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Chilly Mushroom</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Saute Mushroom</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Tikka</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Tauk</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Malai Tikka</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Irani Tikka</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Crispy Corn</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_nonveg_starters">🍗 Non-Veg Starters</h4>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken 65</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Lollipop</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chilli Chicken (Dry)</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Manchurian (Dry)</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Salt &amp; Pepper</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Dragon Chicken</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Tikka</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Malai Tikka</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Irani Tikka</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Seekh Kebab</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Seekh Kebab</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Tandoori Chicken</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Prawns 65</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Prawn Manchurian</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Fish Fingers</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Fish 65</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_salads">🥗 Salads</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Sliced Green Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Tossed Green Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mexican Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Orange &amp; Sprout Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Chinese Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Waldrof Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Russian Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Japanese Salad</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Hawaiian Salad</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Mayonnaise Salad</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Grilled Chicken with Tahina Salad</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_veg_soups">🍲 Veg Soups</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Hot &amp; Sour Soup</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Manchow Soup</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Sweet Corn Soup</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Lemon Coriander Soup</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Burnt Garlic Soup</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cream of Soup (Veg / Mushroom)</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_nonveg_soups">🍲 Non-Veg Soups</h4>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Hot &amp; Sour Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Sweet Corn Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Manchow Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Burnt Garlic Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Seafood Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Cream of Chicken Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Soup</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Murg</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_biryani">🍚 Biryani</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Biryani Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Egg Biryani</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Vegetable Biryani</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kaju Biryani</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Biryani</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Vegetable Pulao</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kashmiri Pulao</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kaju Pulao</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Dum Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Fry Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Tikka Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Prawns Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Fish Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Dum Biryani</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Fry Biryani</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_fried_rice">🍳 Fried Rice</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Steam Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Vegetable Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Egg Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Singapore Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Burnt Garlic Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Fortune Rice</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Fried Rice</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Schezwan Chicken Fried Rice</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_veg_curries">🍛 Vegetarian Curries</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Plain Palak</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Dal (Fry / Tadka)</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mix Veg Curry</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kadai Vegetables</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Palak Paneer</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mushroom Masala</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Methi Chaman</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Paneer Butter Masala</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kaju Paneer Masala</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Kaju Masala</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_nonveg_curries">🍖 Non-Veg Curries</h4>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Butter Masala</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Kadai Chicken</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Tikka Masala</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Korma</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Handi</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chilli Chicken Gravy</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Masala</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Korma</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mutton Rogan Josh</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Keema Masala</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Prawn Masala</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Fish Masala</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_noodles">🍜 Noodles</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Soft Noodles</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg Hakka Noodles</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Egg Soft Noodles</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Soft Noodles</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Schezwan Noodles</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Prawns Soft Noodles</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mixed Soft Noodles</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_chopsuey">🥡 Chopsuey</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Veg American Chopsuey</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>American Chicken Chopsuey</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Chicken Chinese Chopsuey</div>
+          <div class="menu-item"><span class="dot dot-nonveg"></span>Mixed American Chopsuey</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_juices">🥤 Juices, Lassi &amp; Shakes</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fresh Lime Water (Salt / Sweet)</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fresh Lime Soda (Salt / Sweet)</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Lassi (Salt / Sweet)</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mango Lassi</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Choco Lassi</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Choice of Fruit Juice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mint Pineapple Juice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cocktail Juice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Vanilla Milk Shake</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Pista Milk Shake</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Choco Milk Shake</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Ice Tea (Mint / Lemon / Honey)</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_mocktails">🍹 Mocktails &amp; Specials</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Virgin Mojito</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Chilli Mojito</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Lime Mint</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Ginger Mocktail</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Shirley Temple</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Blue Hawaiian</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Pina Colada</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Hawaiian Punch</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fruit Punch</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Frishler</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cendele</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Bilal Special Mocktail</div>
+        </div>
+
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_desserts">🍮 Desserts &amp; Sweets</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fresh Fruit Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Gulab Jamun</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Gajar ka Halwa</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Double Ka Meetha</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Qurbani Ka Meetha</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Badami Kheer</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cream Fruit Salad</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fruit Custard</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Mango Suffle</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Cream Caramel</div>
+        </div>
+
+        <div class="menu-cat-card glass-card">
+          <h4 data-i18n="cat_icecream">🍦 Ice Cream</h4>
+          <div class="menu-item"><span class="dot dot-veg"></span>Ice Cream of your Choice</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Fruit Salad with Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Double Sunday Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Qurbani Ka Meetha with Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Honeymoon Special Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Chocolate Rolled Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Midnight Beauty Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Chef Special Fried Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Tuty Frooti Ice Cream</div>
+          <div class="menu-item"><span class="dot dot-veg"></span>Bilal Special Ice Cream</div>
+        </div>
+
+        </div><!-- end carousel-track -->
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8250;</button>
+      </div><!-- end carousel-wrapper -->
+
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label" data-i18n="reviews_label">What Guests Say</p>
+        <h2 class="section-title" data-i18n="reviews_title">Loved by Ongole</h2>
+        <div class="ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem">◆</span>
+          <span class="ornament-line ornament-line-r"></span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card glass-card reveal" style="transition-delay:.1s">
+          <div class="review-stars">★★★★★</div>
+          <blockquote data-i18n="review1">The Bilal Fry Biryani is unmatched in Ongole. Rich flavour, generous portions, and the service was lightning fast. Will keep coming back.</blockquote>
+          <span class="review-sig" data-i18n="review1_sig">Biryani Lover</span>
+        </div>
+        <div class="review-card glass-card reveal" style="transition-delay:.2s">
+          <div class="review-stars">★★★★★</div>
+          <blockquote data-i18n="review2">Their Chinese soups and starters are a must-try — genuinely authentic. Great spot for groups and family dinners. Clean and comfortable atmosphere too.</blockquote>
+          <span class="review-sig" data-i18n="review2_sig">Regular Guest</span>
+        </div>
+        <div class="review-card glass-card reveal" style="transition-delay:.3s">
+          <div class="review-stars">★★★★☆</div>
+          <blockquote data-i18n="review3">Came for the tandoor, stayed for the desserts. Bilal Special Ice Cream is absolutely delicious. A more focused, high-quality experience than anywhere else in the city.</blockquote>
+          <span class="review-sig" data-i18n="review3_sig">Family Diner</span>
+        </div>
+      </div>
+
+      <div class="rating-banner reveal" style="transition-delay:.1s">
+        <span class="rating-big">4.6 ★</span>
+        <p data-i18n="rating_text">Rated on Google &nbsp;·&nbsp; Based on over 1,200 reviews</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label" data-i18n="visit_label">Find Us</p>
+        <h2 class="section-title" data-i18n="visit_title">Visit or Get in Touch</h2>
+        <div class="ornament">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem">◆</span>
+          <span class="ornament-line ornament-line-r"></span>
+        </div>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-card glass-card reveal" style="transition-delay:.1s">
+          <h3 data-i18n="visit_card_title">Restaurant Details</h3>
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div class="info-text">
+              <strong data-i18n="visit_address_label">Address</strong>
+              <span data-i18n-html="visit_address">10th Ln, Ramnagar, Ongole,<br>Andhra Pradesh 523001</span>
+              <a href="https://www.google.com/maps/search/Bilal+Family+%26+Multicuisine+Restaurant,+Ramnagar,+Ongole,+Andhra+Pradesh" target="_blank" rel="noreferrer" data-i18n="visit_maps_link" style="display:inline-block;margin-top:.4rem;font-size:.83rem;">📍 Open in Google Maps</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📞</span>
+            <div class="info-text">
+              <strong data-i18n="visit_phone_label">Phone</strong>
+              <a href="tel:+917947418309">+91 07947418309</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🕙</span>
+            <div class="info-text">
+              <strong data-i18n="visit_hours_label">Hours</strong>
+              <span data-i18n="visit_hours_val">10:00 AM – 11:00 PM · Open all days</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🚗</span>
+            <div class="info-text">
+              <span data-i18n="visit_parking">Free street parking available nearby</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wa-action-card reveal" style="transition-delay:.2s">
+          <h3 data-i18n="wa_card_title">Reserve or Order via WhatsApp</h3>
+          <p data-i18n="wa_card_desc">Send us a quick message to book a table, place a takeaway order, or enquire about family packs and group platters.</p>
+          <div class="wa-options">
+            <a class="btn-wa-light" href="https://wa.me/917947418309?text=Hi%20Bilal%20Restaurant%2C%20I%20would%20like%20to%20reserve%20a%20table" target="_blank" rel="noreferrer">
+              🪑 <span data-i18n="wa_btn1">Reserve a Table</span>
+            </a>
+            <a class="btn-wa-light" href="https://wa.me/917947418309?text=Hi%20Bilal%20Restaurant%2C%20I%20would%20like%20to%20place%20a%20takeaway%20order" target="_blank" rel="noreferrer">
+              🛍️ <span data-i18n="wa_btn2">Place Takeaway Order</span>
+            </a>
+            <a class="btn-wa-light" href="https://wa.me/917947418309?text=Hi%20Bilal%20Restaurant%2C%20I%20would%20like%20to%20enquire%20about%20family%20packs" target="_blank" rel="noreferrer">
+              👨‍👩‍👧 <span data-i18n="wa_btn3">Enquire About Family Packs</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a class="floating-wa" href="https://wa.me/917947418309?text=Hi%20Bilal%20Restaurant" target="_blank" rel="noreferrer">
+    📲 <span data-i18n="floating_wa">Chat with Us</span>
+  </a>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-gem">
+        <span class="footer-gem-line"></span>
+        <span class="footer-gem-icon">◆</span>
+        <span class="footer-gem-line"></span>
+      </div>
+      <div class="footer-brand" data-i18n="footer_brand">Bilal Family &amp; Multicuisine Restaurant</div>
+      <div class="footer-address" data-i18n="footer_address">10th Ln, Ramnagar, Ongole, Andhra Pradesh 523001 &nbsp;·&nbsp; +91 07947418309</div>
+      <div class="footer-dev">Developed with ❤️ by Arjun Thotakura &nbsp;·&nbsp; <a href="mailto:at.thotakura@gmail.com">at.thotakura@gmail.com</a> &nbsp;·&nbsp; © 2025 Bilal Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const T = {
+      en: {
+        brand_name: "Bilal Family & Multicuisine",
+        brand_sub: "Ongole · Ramnagar",
+        nav_about: "About",
+        nav_menu: "Menu",
+        nav_reviews: "Reviews",
+        nav_visit: "Visit Us",
+        hero_kicker: "Ongole's Favourite Multicuisine Restaurant",
+        hero_h1: 'Where Every Meal Becomes<br>a <span class="hero-em">Memory</span>',
+        hero_tagline: "Slow-cooked dum biryanis, Arabian platters, sizzling tandoor, authentic Chinese — all crafted fresh for families and food lovers in Ongole.",
+        hero_cta_menu: "Explore Our Menu",
+        hero_cta_wa: "Reserve via WhatsApp",
+        trust_google: "Google Rating",
+        trust_reviews: "Reviews",
+        trust_daily: "Daily",
+        trust_family: "Family-Friendly Dining",
+        trust_parking: "Free Parking Nearby",
+        about_label: "Our Story",
+        about_title: "A Taste of Heritage, Every Day",
+        about_desc: "Bilal brings together the richness of Hyderabadi Mughlai cooking, coastal Andhra seafood, aromatic Arabian platters and authentic Chinese dishes — served with warmth and speed that keeps families coming back.",
+        about_card1_title: "What We Serve",
+        about_card1_desc: "From slow-cooked dum biryanis to sizzling tandoor starters, authentic Chinese soups, and fresh seafood — our menu has something for every palate and every occasion.",
+        about_card2_title: "Why Guests Love Us",
+        about_li1: "Handmade spice blends and slow-cooked dum biryanis — a Bilal hallmark",
+        about_li2: "Fast, friendly service for quick lunches and relaxed family dinners",
+        about_li3: "Generous portions and curated platters perfect for groups",
+        about_li4: "Clean, contemporary ambience suited for families and kids",
+        about_li5: "Authentic Chinese soups and starters — a must-try among regulars",
+        menu_label: "What We Serve",
+        menu_title: "Our Menu",
+        menu_desc: "Our complete menu — everything we serve, all in one place.",
+        tab_starters: "Starters",
+        tab_soups: "Soups & Salads",
+        tab_biryani: "Biryani & Rice",
+        tab_curries: "Curries",
+        tab_noodles: "Noodles & Chopsuey",
+        tab_drinks: "Drinks",
+        tab_desserts: "Desserts",
+        cat_veg_starters: "🥗 Vegetarian Starters",
+        cat_nonveg_starters: "🍗 Non-Veg Starters",
+        cat_salads: "🥗 Salads",
+        cat_veg_soups: "🍲 Veg Soups",
+        cat_nonveg_soups: "🍲 Non-Veg Soups",
+        cat_biryani: "🍚 Biryani",
+        cat_fried_rice: "🍳 Fried Rice",
+        cat_veg_curries: "🍛 Vegetarian Curries",
+        cat_nonveg_curries: "🍖 Non-Veg Curries",
+        cat_noodles: "🍜 Noodles",
+        cat_chopsuey: "🥡 Chopsuey",
+        cat_juices: "🥤 Juices, Lassi & Shakes",
+        cat_mocktails: "🍹 Mocktails & Specials",
+        cat_drinks: "🥤 Juices & Mocktails",
+        cat_desserts: "🍮 Desserts & Sweets",
+        cat_icecream: "🍦 Ice Cream",
+        reviews_label: "What Guests Say",
+        reviews_title: "Loved by Ongole",
+        review1: "The Bilal Fry Biryani is unmatched in Ongole. Rich flavour, generous portions, and the service was lightning fast. Will keep coming back.",
+        review1_sig: "Biryani Lover",
+        review2: "Their Chinese soups and starters are a must-try — genuinely authentic. Great spot for groups and family dinners. Clean and comfortable atmosphere too.",
+        review2_sig: "Regular Guest",
+        review3: "Came for the tandoor, stayed for the desserts. Bilal Special Ice Cream is absolutely delicious. A more focused, high-quality experience than anywhere else in the city.",
+        review3_sig: "Family Diner",
+        rating_text: "Rated on Google  ·  Based on over 1,200 reviews",
+        visit_label: "Find Us",
+        visit_title: "Visit or Get in Touch",
+        visit_card_title: "Restaurant Details",
+        visit_address_label: "Address",
+        visit_address: "10th Ln, Ramnagar, Ongole,<br>Andhra Pradesh 523001",
+        visit_phone_label: "Phone",
+        visit_hours_label: "Hours",
+        visit_hours_val: "10:00 AM – 11:00 PM · Open all days",
+        visit_parking: "Free street parking available nearby",
+        visit_maps_link: "📍 Open in Google Maps",
+        floating_wa: "Chat with Us",
+        wa_card_title: "Reserve or Order via WhatsApp",
+        wa_card_desc: "Send us a quick message to book a table, place a takeaway order, or enquire about family packs and group platters.",
+        wa_btn1: "Reserve a Table",
+        wa_btn2: "Place Takeaway Order",
+        wa_btn3: "Enquire About Family Packs",
+        footer_brand: "Bilal Family & Multicuisine Restaurant",
+        footer_address: "10th Ln, Ramnagar, Ongole, Andhra Pradesh 523001  ·  +91 07947418309",
+      },
+      te: {
+        brand_name: "బిలాల్ ఫ్యామిలీ & మల్టీకుజీన్",
+        brand_sub: "ఒంగోలు · రాంనగర్",
+        nav_about: "గురించి",
+        nav_menu: "మెనూ",
+        nav_reviews: "సమీక్షలు",
+        nav_visit: "సందర్శించండి",
+        hero_kicker: "ఒంగోలు అభిమాన మల్టీకుజీన్ రెస్టారెంట్",
+        hero_h1: 'ప్రతి భోజనం ఒక<br><span class="hero-em">జ్ఞాపకం</span> అవుతుంది',
+        hero_tagline: "స్లో-కుక్డ్ దమ్ బిర్యానీలు, అరేబియన్ ప్లాటర్లు, వేడి తందూర్, అసలైన చైనీస్ — ఒంగోలులోని కుటుంబాలు మరియు ఆహార ప్రేమికుల కోసం తాజాగా తయారు చేయబడతాయి.",
+        hero_cta_menu: "మెనూ చూడండి",
+        hero_cta_wa: "వాట్సాప్‌లో రిజర్వ్ చేయండి",
+        trust_google: "గూగుల్ రేటింగ్",
+        trust_reviews: "సమీక్షలు",
+        trust_daily: "రోజూ",
+        trust_family: "కుటుంబ వాతావరణం",
+        trust_parking: "దగ్గర్లో ఉచిత పార్కింగ్",
+        about_label: "మా కథ",
+        about_title: "ప్రతిరోజూ ఒక ఐతిహాసిక రుచి",
+        about_desc: "బిలాల్ హైదరాబాదీ మొఘలాయ్ వంట, తీరప్రాంత ఆంధ్ర సీఫుడ్, సువాసన భరిత అరేబియన్ ప్లాటర్లు మరియు అసలైన చైనీస్ వంటలను ఒకచోట చేర్చింది — కుటుంబాలు మళ్ళీ మళ్ళీ వచ్చేలా వెచ్చదనం మరియు వేగంతో వడ్డిస్తుంది.",
+        about_card1_title: "మేము వడ్డించేవి",
+        about_card1_desc: "స్లో-కుక్డ్ దమ్ బిర్యానీలు నుండి వేడి తందూర్ స్టార్టర్లు, అసలైన చైనీస్ సూప్స్, మరియు తాజా సీఫుడ్ వరకు — మా మెనూలో ప్రతి రుచికి, ప్రతి సందర్భానికి ఏదో ఒకటి ఉంది.",
+        about_card2_title: "అతిథులు ఎందుకు ఇష్టపడతారు",
+        about_li1: "స్వయంగా తయారు చేసిన మసాలాలు మరియు స్లో-కుక్డ్ దమ్ బిర్యానీలు — బిలాల్ ప్రత్యేకత",
+        about_li2: "త్వరిత మధ్యాహ్న భోజనం మరియు విశ్రాంతిగా కుటుంబ విందులకు అనుకూలమైన సేవ",
+        about_li3: "గ్రూప్‌లకు అనువైన విశాల పరిమాణాలు మరియు క్యూరేటెడ్ ప్లాటర్లు",
+        about_li4: "కుటుంబాలు మరియు పిల్లలకు అనుకూలమైన శుభ్రమైన, ఆధునిక వాతావరణం",
+        about_li5: "అసలైన చైనీస్ సూప్స్ మరియు స్టార్టర్లు — నియమిత అతిథులలో తప్పకుండా ప్రయత్నించాల్సినవి",
+        menu_label: "మేము వడ్డించేవి",
+        menu_title: "మా మెనూ",
+        menu_desc: "మా పూర్తి మెనూ — మేము వడ్డించే అన్నీ ఒకే చోట.",
+        tab_starters: "స్టార్టర్లు",
+        tab_soups: "సూప్స్ & సలాడ్స్",
+        tab_biryani: "బిర్యానీ & అన్నం",
+        tab_curries: "కర్రీలు",
+        tab_noodles: "నూడిల్స్ & చాప్‌స్యూ",
+        tab_drinks: "పానీయాలు",
+        tab_desserts: "డెజర్ట్స్",
+        cat_veg_starters: "🥗 శాకాహార స్టార్టర్లు",
+        cat_nonveg_starters: "🍗 నాన్-వెజ్ స్టార్టర్లు",
+        cat_salads: "🥗 సలాడ్స్",
+        cat_veg_soups: "🍲 శాకాహార సూప్స్",
+        cat_nonveg_soups: "🍲 నాన్-వెజ్ సూప్స్",
+        cat_biryani: "🍚 బిర్యానీ",
+        cat_fried_rice: "🍳 ఫ్రైడ్ రైస్",
+        cat_veg_curries: "🍛 శాకాహార కర్రీలు",
+        cat_nonveg_curries: "🍖 నాన్-వెజ్ కర్రీలు",
+        cat_noodles: "🍜 నూడిల్స్",
+        cat_chopsuey: "🥡 చాప్‌స్యూ",
+        cat_juices: "🥤 జ్యూస్, లస్సీ & షేక్స్",
+        cat_mocktails: "🍹 మాక్‌టెయిల్స్ & స్పెషల్స్",
+        cat_drinks: "🥤 జ్యూస్ & మాక్‌టెయిల్స్",
+        cat_desserts: "🍮 డెజర్ట్స్ & స్వీట్స్",
+        cat_icecream: "🍦 ఐస్ క్రీమ్",
+        reviews_label: "అతిథులు ఏమంటారు",
+        reviews_title: "ఒంగోలు మెచ్చుకున్న రెస్టారెంట్",
+        review1: "బిలాల్ ఫ్రై బిర్యానీ ఒంగోలులో సాటిలేనిది. సమృద్ధమైన రుచి, విశాల పరిమాణాలు, మరియు సేవ చాలా వేగంగా ఉంది. మళ్ళీ మళ్ళీ వస్తూనే ఉంటాను.",
+        review1_sig: "బిర్యానీ ప్రేమికుడు",
+        review2: "వారి చైనీస్ సూప్స్ మరియు స్టార్టర్లు తప్పకుండా ప్రయత్నించాలి — నిజంగా అసలైనవి. గ్రూప్‌లు మరియు కుటుంబ విందులకు అద్భుతమైన స్థలం. శుభ్రమైన మరియు సుఖమైన వాతావరణం కూడా.",
+        review2_sig: "నియమిత అతిథి",
+        review3: "తందూర్ కోసం వచ్చాను, డెజర్ట్స్ కోసం ఉండిపోయాను. బిలాల్ స్పెషల్ ఐస్ క్రీమ్ అద్భుతంగా ఉంది. నగరంలో మరెక్కడా లేని నాణ్యమైన అనుభవం.",
+        review3_sig: "కుటుంబ డైనర్",
+        rating_text: "గూగుల్‌లో రేటింగ్  ·  1,200 కంటే ఎక్కువ సమీక్షల ఆధారంగా",
+        visit_label: "మాకు చేరుకోండి",
+        visit_title: "సందర్శించండి లేదా సంప్రదించండి",
+        visit_card_title: "రెస్టారెంట్ వివరాలు",
+        visit_address_label: "చిరునామా",
+        visit_address: "10వ లేన్, రాంనగర్, ఒంగోలు,<br>ఆంధ్రప్రదేశ్ 523001",
+        visit_phone_label: "ఫోన్",
+        visit_hours_label: "సమయాలు",
+        visit_hours_val: "ఉ. 10:00 – రా. 11:00 · ప్రతిరోజూ తెరిచి ఉంటాం",
+        visit_parking: "దగ్గర్లో ఉచిత స్ట్రీట్ పార్కింగ్ అందుబాటులో ఉంది",
+        visit_maps_link: "📍 గూగుల్ మ్యాప్స్‌లో చూడండి",
+        floating_wa: "మాతో చాట్ చేయండి",
+        wa_card_title: "వాట్సాప్‌లో రిజర్వ్ చేయండి లేదా ఆర్డర్ చేయండి",
+        wa_card_desc: "టేబుల్ బుక్ చేయడానికి, టేకవే ఆర్డర్ పెట్టడానికి, లేదా ఫ్యామిలీ పాక్స్ మరియు గ్రూప్ ప్లాటర్ల గురించి విచారించడానికి మాకు మెసేజ్ పంపండి.",
+        wa_btn1: "టేబుల్ రిజర్వ్ చేయండి",
+        wa_btn2: "టేకవే ఆర్డర్ పెట్టండి",
+        wa_btn3: "ఫ్యామిలీ పాక్స్ గురించి అడగండి",
+        footer_brand: "బిలాల్ ఫ్యామిలీ & మల్టీకుజీన్ రెస్టారెంట్",
+        footer_address: "10వ లేన్, రాంనగర్, ఒంగోలు, ఆంధ్రప్రదేశ్ 523001  ·  +91 07947418309",
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang === 'te' ? 'te' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.dataset.i18n;
+        if (T[lang] && T[lang][key] !== undefined) el.textContent = T[lang][key];
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+        var key = el.dataset.i18nHtml;
+        if (T[lang] && T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      try { localStorage.setItem('bilal_lang', lang); } catch(e) {}
+    }
+
+    (function() {
+      var track = document.getElementById('menuCarousel');
+      var prev  = document.getElementById('carouselPrev');
+      var next  = document.getElementById('carouselNext');
+      var GAP      = 18;
+      var DURATION = 720; // ms — ease-in-out scroll duration
+
+      var realCards = Array.from(track.querySelectorAll('.menu-cat-card'));
+      var N = realCards.length;
+
+      // Clone all cards on both ends for infinite loop
+      realCards.forEach(function(c) {
+        var cl = c.cloneNode(true);
+        cl.setAttribute('aria-hidden', 'true');
+        track.appendChild(cl);
+      });
+      realCards.forEach(function(c) {
+        var cl = c.cloneNode(true);
+        cl.setAttribute('aria-hidden', 'true');
+        track.insertBefore(cl, realCards[0]);
+      });
+
+      function cardW() { return realCards[0].offsetWidth + GAP; }
+
+      // Start at first real card (skip prepended clones)
+      track.scrollLeft = N * cardW();
+
+      // Ease-in-out-cubic — matches CSS ease-in-out feel
+      function easeInOut(t) {
+        return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+      }
+
+      var animId = null;
+      function animateTo(target) {
+        if (animId) cancelAnimationFrame(animId);
+        var from      = track.scrollLeft;
+        var distance  = target - from;
+        var startTime = null;
+
+        function tick(ts) {
+          if (!startTime) startTime = ts;
+          var t = Math.min((ts - startTime) / DURATION, 1);
+          track.scrollLeft = from + distance * easeInOut(t);
+          if (t < 1) {
+            animId = requestAnimationFrame(tick);
+          } else {
+            animId = null;
+            recentre();
+          }
+        }
+        animId = requestAnimationFrame(tick);
+      }
+
+      // Silently jump back into the real-card zone after animation ends
+      function recentre() {
+        var sl  = track.scrollLeft;
+        var off = N * cardW();
+        if (sl < off)       track.scrollLeft = sl + off;
+        else if (sl >= off * 2) track.scrollLeft = sl - off;
+      }
+
+      function step() { return cardW() * 2; }
+      next.addEventListener('click', function() { animateTo(track.scrollLeft + step()); });
+      prev.addEventListener('click', function() { animateTo(track.scrollLeft - step()); });
+    })();
+
+    var revealObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('revealed'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) { revealObs.observe(el); });
+
+    try {
+      var saved = localStorage.getItem('bilal_lang');
+      if (saved === 'te') setLang('te');
+    } catch(e) {}
+
+    function toggleTheme() {
+      var isDark = document.documentElement.classList.toggle('dark-mode');
+      var icon = document.querySelector('#themeToggle .theme-icon');
+      if (icon) icon.textContent = isDark ? '☀️' : '🌙';
+      try { localStorage.setItem('bilal_theme', isDark ? 'dark' : 'light'); } catch(e) {}
+    }
+
+    (function() {
+      try {
+        if (localStorage.getItem('bilal_theme') === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+          var icon = document.querySelector('#themeToggle .theme-icon');
+          if (icon) icon.textContent = '☀️';
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+</body>
+</html>
